@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cardápio de Halloween</title>
+    <title>Cardápio - It: A Coisa</title>
     <style>
         body {
             font-family: 'Creepster', cursive;
-            background-color: #1c1c1c;
+            background-color: #0c0c0c;
             color: #f5f5f5;
             margin: 0;
             padding: 0;
@@ -17,52 +17,68 @@
             width: 90%;
             margin: 0 auto;
             max-width: 1200px;
+            padding-top: 20px;
         }
         h1, h2 {
             text-align: center;
             color: #e74c3c;
-            text-shadow: 2px 2px 10px #000;
+            text-shadow: 3px 3px 10px #000;
+        }
+        h1 {
+            font-size: 3em;
+            letter-spacing: 2px;
         }
         .category {
             margin-bottom: 30px;
-            background-color: #2c3e50;
-            padding: 15px;
+            background-color: #1c1c1c;
+            padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+            border-left: 5px solid #e74c3c;
         }
         .item {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin: 10px 0;
+            margin: 15px 0;
         }
         .item img {
-            height: 50px;
-            margin-right: 10px;
+            height: 60px;
+            margin-right: 15px;
+            border-radius: 5px;
         }
         .item p {
             margin: 0;
             color: #ecf0f1;
+            font-size: 1.2em;
         }
         .price {
-            color: #f39c12;
+            color: #e74c3c;
             font-weight: bold;
+            font-size: 1.4em;
+        }
+        .balloon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 100px;
         }
         footer {
             text-align: center;
-            margin: 20px 0;
+            margin: 40px 0;
             color: #e74c3c;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Cardápio Especial de Halloween 🎃</h1>
+        <h1>Cardápio do It 🎈</h1>
         <div id="menu"></div>
+        <img src="https://example.com/red-balloon.png" class="balloon" alt="Red Balloon">
     </div>
 
     <footer>
-        <p>👻 Aproveite sua noite assustadora! 👻</p>
+        <p>🎈 "Todos flutuam aqui!" 🎈</p>
     </footer>
 
     <script>
